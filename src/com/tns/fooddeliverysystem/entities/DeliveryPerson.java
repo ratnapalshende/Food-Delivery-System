@@ -1,3 +1,5 @@
+package com.tns.fooddeliverysystem.entities;
+
 public class DeliveryPerson {
     // Private fields
     private int deliveryPersonId;

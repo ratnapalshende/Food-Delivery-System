@@ -1,5 +1,6 @@
+package com.tns.fooddeliverysystem.entities;
+
 public class FoodItem {
-    // Private fields
     private int id;
     private String name;
     private double price;
@@ -11,33 +12,31 @@ public class FoodItem {
         this.price = price;
     }
 
-    // Getters
+    // Getter and Setter for id
     public int getId() {
         return id;
     }
-
-    public String getName() {
-        return name;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    // Setters
     public void setId(int id) {
         this.id = id;
     }
 
+    // Getter and Setter for name
+    public String getName() {
+        return name;
+    }
     public void setName(String name) {
         this.name = name;
     }
 
+    // Getter and Setter for price
+    public double getPrice() {
+        return price;
+    }
     public void setPrice(double price) {
         this.price = price;
     }
 
-    // Overriding toString method
+    // Overridden toString() method for meaningful output
     @Override
     public String toString() {
         return "FoodItem{" +

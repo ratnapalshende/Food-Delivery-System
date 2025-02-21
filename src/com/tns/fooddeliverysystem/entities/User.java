@@ -25,6 +25,10 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{userId=" + userId + ", username='" + username + "', contactNo=" + contactNo + "}";
+        return "User{" +
+                "userId=" + userId +
+                ", username='" + username + '\'' +
+                ", contactNo=" + contactNo +
+                '}';
     }
 }

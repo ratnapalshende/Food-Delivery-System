@@ -1,11 +1,16 @@
 package com.tns.fooddeliverysystem.entities;
 
+/**
+ * Customer class that extends User.
+ * Each customer has a one-to-one relationship with a Cart.
+ */
 public class Customer extends User {
-    private Cart cart; 
+    private Cart cart;
 
-    public Customer(int userId, String username, long contactNo, Cart cart) {
+    public Customer(int userId, String username, long contactNo) {
         super(userId, username, contactNo);
-        this.cart = cart;
+        // Initialize the customer's cart
+        this.cart = new Cart();
     }
 
     public Cart getCart() {
@@ -14,6 +19,10 @@ public class Customer extends User {
 
     @Override
     public String toString() {
-        return super.toString() + ", Cart=" + (cart != null ? "Available" : "Not Assigned");
+        return "Customer{" +
+                "userId=" + getUserId() +
+                ", username='" + getUsername() + '\'' +
+                ", contactNo=" + getContactNo() +
+                '}';
     }
 }

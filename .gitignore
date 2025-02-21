@@ -13,3 +13,7 @@
 .project
 .classpath
 .settings/
+
+
+# test files
+test/
